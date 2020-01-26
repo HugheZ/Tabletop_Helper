@@ -1,0 +1,123 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MainWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(573, 369)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/images/Icons/roll.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setToolButtonStyle(QtCore.Qt.ToolButtonIconOnly)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 573, 18))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menuWindow = QtWidgets.QMenu(self.menubar)
+        self.menuWindow.setObjectName("menuWindow")
+        self.menuHelp = QtWidgets.QMenu(self.menubar)
+        self.menuHelp.setObjectName("menuHelp")
+        self.menuPreferences = QtWidgets.QMenu(self.menubar)
+        self.menuPreferences.setObjectName("menuPreferences")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionOpen = QtWidgets.QAction(MainWindow)
+        self.actionOpen.setObjectName("actionOpen")
+        self.actionNew = QtWidgets.QAction(MainWindow)
+        self.actionNew.setObjectName("actionNew")
+        self.actionSave = QtWidgets.QAction(MainWindow)
+        self.actionSave.setObjectName("actionSave")
+        self.actionSaveAs = QtWidgets.QAction(MainWindow)
+        self.actionSaveAs.setObjectName("actionSaveAs")
+        self.actionQuit = QtWidgets.QAction(MainWindow)
+        self.actionQuit.setObjectName("actionQuit")
+        self.actionInitiative_Tracker = QtWidgets.QAction(MainWindow)
+        self.actionInitiative_Tracker.setCheckable(True)
+        self.actionInitiative_Tracker.setObjectName("actionInitiative_Tracker")
+        self.actionQuick_Lookup = QtWidgets.QAction(MainWindow)
+        self.actionQuick_Lookup.setCheckable(True)
+        self.actionQuick_Lookup.setObjectName("actionQuick_Lookup")
+        self.actionDice_Roller = QtWidgets.QAction(MainWindow)
+        self.actionDice_Roller.setCheckable(True)
+        self.actionDice_Roller.setObjectName("actionDice_Roller")
+        self.actionNotes_Dock = QtWidgets.QAction(MainWindow)
+        self.actionNotes_Dock.setCheckable(True)
+        self.actionNotes_Dock.setObjectName("actionNotes_Dock")
+        self.actionAbout = QtWidgets.QAction(MainWindow)
+        self.actionAbout.setObjectName("actionAbout")
+        self.actionDice_Color = QtWidgets.QAction(MainWindow)
+        self.actionDice_Color.setObjectName("actionDice_Color")
+        self.menuFile.addAction(self.actionOpen)
+        self.menuFile.addAction(self.actionNew)
+        self.menuFile.addSeparator()
+        self.menuFile.addAction(self.actionSave)
+        self.menuFile.addAction(self.actionSaveAs)
+        self.menuFile.addSeparator()
+        self.menuFile.addAction(self.actionQuit)
+        self.menuHelp.addAction(self.actionAbout)
+        self.menuPreferences.addAction(self.actionDice_Color)
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuWindow.menuAction())
+        self.menubar.addAction(self.menuHelp.menuAction())
+        self.menubar.addAction(self.menuPreferences.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Tabletop Assistant"))
+        self.menuFile.setTitle(_translate("MainWindow", "File"))
+        self.menuWindow.setTitle(_translate("MainWindow", "Window"))
+        self.menuHelp.setTitle(_translate("MainWindow", "Help"))
+        self.menuPreferences.setTitle(_translate("MainWindow", "Preferences"))
+        self.actionOpen.setText(_translate("MainWindow", "Open"))
+        self.actionOpen.setShortcut(_translate("MainWindow", "Ctrl+O"))
+        self.actionNew.setText(_translate("MainWindow", "New"))
+        self.actionNew.setShortcut(_translate("MainWindow", "Ctrl+N"))
+        self.actionSave.setText(_translate("MainWindow", "Save"))
+        self.actionSave.setShortcut(_translate("MainWindow", "Ctrl+S"))
+        self.actionSaveAs.setText(_translate("MainWindow", "SaveAs..."))
+        self.actionSaveAs.setShortcut(_translate("MainWindow", "F12"))
+        self.actionQuit.setText(_translate("MainWindow", "Quit"))
+        self.actionQuit.setShortcut(_translate("MainWindow", "Ctrl+Q"))
+        self.actionInitiative_Tracker.setText(_translate("MainWindow", "Initiative Tracker"))
+        self.actionInitiative_Tracker.setShortcut(_translate("MainWindow", "Alt+I"))
+        self.actionQuick_Lookup.setText(_translate("MainWindow", "Quick Lookup"))
+        self.actionQuick_Lookup.setShortcut(_translate("MainWindow", "Alt+Q"))
+        self.actionDice_Roller.setText(_translate("MainWindow", "Dice Roller"))
+        self.actionDice_Roller.setShortcut(_translate("MainWindow", "Alt+D"))
+        self.actionNotes_Dock.setText(_translate("MainWindow", "Notes Dock"))
+        self.actionNotes_Dock.setShortcut(_translate("MainWindow", "Alt+N"))
+        self.actionAbout.setText(_translate("MainWindow", "About"))
+        self.actionAbout.setShortcut(_translate("MainWindow", "Alt+A"))
+        self.actionDice_Color.setText(_translate("MainWindow", "Dice Color"))
+        self.actionDice_Color.setToolTip(_translate("MainWindow", "Set dice color"))
+from .resource_icons_rc import *
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

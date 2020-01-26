@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QuickLookup</class>
+ <widget class="QWidget" name="QuickLookup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="overallLayout">
+     <item>
+      <layout class="QHBoxLayout" name="searchLayout">
+       <item>
+        <widget class="QComboBox" name="categorySelect"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="searchBox">
+         <property name="placeholderText">
+          <string>Enter Search Term for Category</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="endpoint">
+       <property name="statusTip">
+        <string>Pull from &quot;http://dnd5eapi.co/api/&quot; and &quot;https://api.open5e.com/&quot;</string>
+       </property>
+       <property name="whatsThis">
+        <string>Pulls from &quot;http://dnd5eapi.co/api/&quot; and &quot;https://api.open5e.com/&quot; using the REST framework
+
+If you want to know which endpoints to use, input the given URLs first and the return should tell you how to go deeper. Alternatively, you can visit these sights on your web browser.</string>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Custom Endpoint</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="searchProgress">
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="invertedAppearance">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="output">
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
