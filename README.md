@@ -7,19 +7,19 @@ This tabletop assistant is built for Dungeons and Dragons 5e and for assisting p
 
 Future releases of this application will include the following:
 
-> Dice rolling widget
-> Rolling stats with an associated button click
-> Customizable color for rolling
-> Beautification of saved JSON file for ease of reading
-> Dungeon master tools for encounter planning
-> Potential 3D dice roller using Qt3D
+* Dice rolling widget
+* Rolling stats with an associated button click
+* Customizable color for rolling
+* Beautification of saved JSON file for ease of reading
+* Dungeon master tools for encounter planning
+* Potential 3D dice roller using Qt3D
 
 ## Dependencies
 
 This project relies on several built-in Python libraries, but it requires the following libraries to be installed:
 
-> requests
-> PyQt5
+* requests
+* PyQt5
 
 ## Running
 
